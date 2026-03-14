@@ -45,6 +45,15 @@ const PRODUCTS = [
         image: '/beef_ribs.png',
         badge: null,
     },
+    {
+        name: 'Special Beef Paya',
+        description:
+            'Premium trotters rich in collagen and deep flavour. Perfect for a hearty, traditional slow-cooked broth.',
+        price: '1000 PKR',
+        unit: 'kg',
+        image: '/beef_paya.png',
+        badge: 'Special',
+    },
 ];
 
 export default function Products() {
