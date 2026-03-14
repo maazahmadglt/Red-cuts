@@ -88,7 +88,7 @@
     }
 
     [data-theme="light"] .hero-overlay {
-      background: linear-gradient(135deg, rgba(245,240,235,0.92) 0%, rgba(245,240,235,0.7) 50%, rgba(245,240,235,0.3) 100%);
+      background: linear-gradient(135deg, rgba(245, 240, 235, 0.92) 0%, rgba(245, 240, 235, 0.7) 50%, rgba(245, 240, 235, 0.3) 100%);
     }
 
     [data-theme="light"] .hero h1 {
@@ -97,7 +97,7 @@
 
     [data-theme="light"] .btn-outline {
       color: #1A1A1A;
-      border-color: rgba(0,0,0,0.2);
+      border-color: rgba(0, 0, 0, 0.2);
     }
 
     [data-theme="light"] .btn-outline:hover {
@@ -107,7 +107,7 @@
 
     [data-theme="light"] .product-card,
     [data-theme="light"] .feature-card {
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
     }
 
     [data-theme="light"] .form-group input,
@@ -143,10 +143,21 @@
       height: 20px;
     }
 
-    .theme-toggle .icon-sun { display: none; }
-    .theme-toggle .icon-moon { display: block; }
-    [data-theme="light"] .theme-toggle .icon-sun { display: block; }
-    [data-theme="light"] .theme-toggle .icon-moon { display: none; }
+    .theme-toggle .icon-sun {
+      display: none;
+    }
+
+    .theme-toggle .icon-moon {
+      display: block;
+    }
+
+    [data-theme="light"] .theme-toggle .icon-sun {
+      display: block;
+    }
+
+    [data-theme="light"] .theme-toggle .icon-moon {
+      display: none;
+    }
 
     /* ===== RESET ===== */
     *,
@@ -351,7 +362,7 @@
       align-items: center;
       justify-content: center;
       font-size: 1.3rem;
-      box-shadow: 0 2px 12px rgba(196,30,36,0.4);
+      box-shadow: 0 2px 12px rgba(196, 30, 36, 0.4);
     }
 
     .nav-right {
@@ -375,7 +386,7 @@
 
     .editable:focus {
       border-bottom-color: var(--accent);
-      background: rgba(196,30,36,0.05);
+      background: rgba(196, 30, 36, 0.05);
       border-radius: 4px;
       padding: 2px 4px;
     }
@@ -1068,15 +1079,35 @@
         <a href="#why-us">Why Choose Us</a>
         <a href="#contact">Contact</a>
         <a href="https://wa.me/923485686585?text=Hi!%20I%20want%20to%20order%20from%20Red%20Cuts"
-          class="btn btn-primary nav-cta mobile-only" target="_blank" rel="noopener"><svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order on WhatsApp</a>
+          class="btn btn-primary nav-cta mobile-only" target="_blank" rel="noopener"><svg class="wa-icon"
+            viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg> Order on WhatsApp</a>
       </nav>
       <div class="nav-right">
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
         </button>
         <a href="https://wa.me/923485686585?text=Hi!%20I%20want%20to%20order%20from%20Red%20Cuts"
-          class="btn btn-primary nav-cta desktop" target="_blank" rel="noopener"><svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order Now</a>
+          class="btn btn-primary nav-cta desktop" target="_blank" rel="noopener"><svg class="wa-icon"
+            viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg> Order Now</a>
         <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
           <span></span><span></span><span></span>
         </div>
@@ -1098,7 +1129,11 @@
         <div class="hero-btns">
           <a href="#products" class="btn btn-primary">🥩 View Products</a>
           <a href="https://wa.me/923485686585?text=Hi!%20I%20want%20to%20order%20from%20Red%20Cuts"
-            class="btn btn-whatsapp" target="_blank" rel="noopener"><svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order on WhatsApp</a>
+            class="btn btn-whatsapp" target="_blank" rel="noopener"><svg class="wa-icon" viewBox="0 0 24 24"
+              fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg> Order on WhatsApp</a>
         </div>
         <div class="hero-features">
           <div class="hero-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -1259,12 +1294,12 @@
   <script>
     /* ===== PRODUCT DATA ===== */
     const products = [
-      { id: 1, name: 'Beef Boneless', desc: 'Premium boneless cuts, perfect for curries, BBQ, and steaks. Tender and juicy.', price: 'Rs. 1,800 / kg', img: 'beef_boneless.png', alt: 'Fresh premium boneless beef cuts' },
-      { id: 2, name: 'Beef with Bones', desc: 'Flavorful bone-in beef cuts, ideal for nihari, paya, and slow-cooked dishes.', price: 'Rs. 1,200 / kg', img: 'beef_with_bones.png', alt: 'Fresh beef cuts with bones' },
-      { id: 3, name: 'Beef Ribs', desc: 'Succulent beef ribs with rich marbling. Perfect for grilling and BBQ nights.', price: 'Rs. 1,600 / kg', img: 'beef_ribs.png', alt: 'Premium beef ribs' },
-      { id: 4, name: 'Beef Mince (Keema)', desc: 'Finely ground premium beef mince for kebabs, samosas, and keema dishes.', price: 'Rs. 1,500 / kg', img: 'beef_mince.png', alt: 'Fresh beef mince keema' },
-      { id: 5, name: 'Special Steak Pieces', desc: 'Hand-cut thick steak pieces with perfect marbling. Restaurant-quality at home.', price: 'Rs. 2,200 / kg', img: 'steak_pieces.png', alt: 'Special premium steak pieces' },
-      { id: 6, name: 'Special Beef Paya', desc: 'Traditional beef paya (trotters), perfect for rich and flavorful paya soup. A classic delicacy.', price: 'Rs. 800 / kg', img: 'beef_paya.png', alt: 'Special beef paya trotters' }
+      { id: 1, name: 'Beef Boneless', desc: 'Premium boneless cuts, perfect for curries, BBQ, and steaks. Tender and juicy.', price: 'Rs. 1,600/ kg', img: 'beef_boneless.png', alt: 'Fresh premium boneless beef cuts' },
+      { id: 2, name: 'Beef with Bones', desc: 'Flavorful bone-in beef cuts, ideal for nihari, paya, and slow-cooked dishes.', price: 'Rs. 1,300 / kg', img: 'beef_with_bones.png', alt: 'Fresh beef cuts with bones' },
+      { id: 3, name: 'Beef Ribs', desc: 'Succulent beef ribs with rich marbling. Perfect for grilling and BBQ nights.', price: 'Rs. 1,400 / kg', img: 'beef_ribs.png', alt: 'Premium beef ribs' },
+      { id: 4, name: 'Beef Mince (Keema)', desc: 'Finely ground premium beef mince for kebabs, samosas, and keema dishes.', price: 'Rs. 1,600 / kg', img: 'beef_mince.png', alt: 'Fresh beef mince keema' },
+      { id: 5, name: 'Special Steak Pieces', desc: 'Hand-cut thick steak pieces with perfect marbling. Restaurant-quality at home.', price: 'Rs. 2,000 / kg', img: 'steak_pieces.png', alt: 'Special premium steak pieces' },
+      { id: 6, name: 'Special Beef Paya', desc: 'Traditional beef paya (trotters), perfect for rich and flavorful paya soup. A classic delicacy.', price: 'Rs. 1000 / kg', img: 'beef_paya.png', alt: 'Special beef paya trotters' }
     ];
 
     const features = [
