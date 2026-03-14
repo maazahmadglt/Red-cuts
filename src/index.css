@@ -1,5 +1,5 @@
 /* Google Fonts MUST come first before any other @import/@layer */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Cinzel:wght@600;700;800;900&display=swap');
 
 @import "tailwindcss";
 
@@ -12,8 +12,8 @@
   --color-brand-dark: #1a1a1a;
   --color-brand-card: #1e1e1e;
   --color-brand-gold: #d4af37;
-  --font-sans: 'Inter', sans-serif;
-  --font-display: 'Playfair Display', serif;
+  --font-sans: 'Outfit', sans-serif;
+  --font-display: 'Cinzel', serif;
 }
 
 /* ── Base resets ── */
