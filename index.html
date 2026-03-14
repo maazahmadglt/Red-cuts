@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Cuts — Premium Fresh Beef | Naeem Beef Shop</title>
+  <meta name="description"
+    content="Red Cuts by Naeem Beef Shop — Premium fresh beef cuts, boneless, ribs, mince and steak pieces. Quality halal beef delivered fresh daily.">
+  <meta name="keywords"
+    content="premium beef, fresh beef cuts, halal beef, beef boneless, beef ribs, beef mince, steak, Naeem Beef Shop, Red Cuts">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Red Cuts — Premium Fresh Beef">
+  <meta property="og:description" content="Quality Beef from Naeem Beef Shop. Fresh daily premium cuts.">
+  <meta property="og:image" content="hero_beef.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Red Cuts — Premium Fresh Beef">
+  <meta name="twitter:description" content="Quality Beef from Naeem Beef Shop.">
+  <link rel="icon" type="image/png" href="hero_beef.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"Red Cuts — Naeem Beef Shop",
+  "description":"Premium fresh beef cuts delivered daily",
+  "image":"hero_beef.png",
+  "telephone":"+923485686585",
+  "address":{"@type":"PostalAddress","streetAddress":"Gosht Market, Laiq Ali Chowk","addressLocality":"Local Area","addressCountry":"PK"},
+  "openingHours":"Mo-Su 08:00-22:00",
+  "priceRange":"$$"
+}
+</script>
+  <style>
+    /* ===== CSS VARIABLES ===== */
+    :root {
+      --accent: #C41E24;
+      --accent-dark: #9B1118;
+      --accent-light: #E83A40;
+      --bg-primary: #0A0A0A;
+      --bg-secondary: #111111;
+      --bg-card: #1A1A1A;
+      --bg-card-hover: #222222;
+      --text-primary: #FFFFFF;
+      --text-secondary: #B0B0B0;
+      --text-muted: #777777;
+      --gold: #D4A853;
+      --border: rgba(255, 255, 255, 0.08);
+      --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      --shadow-accent: 0 4px 20px rgba(196, 30, 36, 0.3);
+      --radius: 12px;
+      --radius-lg: 20px;
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --font-heading: 'Playfair Display', serif;
+      --font-body: 'Inter', sans-serif;
+      --max-width: 1200px;
+    }
+
+    /* ===== LIGHT THEME ===== */
+    [data-theme="light"] {
+      --bg-primary: #F5F0EB;
+      --bg-secondary: #FFFFFF;
+      --bg-card: #FFFFFF;
+      --bg-card-hover: #F9F6F3;
+      --text-primary: #1A1A1A;
+      --text-secondary: #555555;
+      --text-muted: #888888;
+      --border: rgba(0, 0, 0, 0.08);
+      --shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    }
+
+    [data-theme="light"] .navbar.scrolled {
+      background: rgba(245, 240, 235, 0.95);
+    }
+
+    [data-theme="light"] .logo,
+    [data-theme="light"] .hamburger span {
+      color: #1A1A1A;
+    }
+
+    [data-theme="light"] .hamburger span {
+      background: #1A1A1A;
+    }
+
+    [data-theme="light"] .hero-overlay {
+      background: linear-gradient(135deg, rgba(245,240,235,0.92) 0%, rgba(245,240,235,0.7) 50%, rgba(245,240,235,0.3) 100%);
+    }
+
+    [data-theme="light"] .hero h1 {
+      color: #1A1A1A;
+    }
+
+    [data-theme="light"] .btn-outline {
+      color: #1A1A1A;
+      border-color: rgba(0,0,0,0.2);
+    }
+
+    [data-theme="light"] .btn-outline:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    [data-theme="light"] .product-card,
+    [data-theme="light"] .feature-card {
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    [data-theme="light"] .form-group input,
+    [data-theme="light"] .form-group textarea {
+      color: #1A1A1A;
+      background: #F9F6F3;
+    }
+
+    /* ===== THEME TOGGLE ===== */
+    .theme-toggle {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition);
+      color: var(--text-secondary);
+      flex-shrink: 0;
+    }
+
+    .theme-toggle:hover {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    .theme-toggle svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .theme-toggle .icon-sun { display: none; }
+    .theme-toggle .icon-moon { display: block; }
+    [data-theme="light"] .theme-toggle .icon-sun { display: block; }
+    [data-theme="light"] .theme-toggle .icon-moon { display: none; }
+
+    /* ===== RESET ===== */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    button,
+    input,
+    textarea {
+      font-family: inherit;
+      border: none;
+      outline: none;
+    }
+
+    /* ===== UTILITY ===== */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .section-label::before {
+      content: '';
+      width: 30px;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+
+    .section-subtitle {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      max-width: 600px;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: var(--transition);
+      letter-spacing: 0.5px;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: var(--shadow-accent);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-light);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(196, 30, 36, 0.45);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+
+    .btn-whatsapp {
+      background: #25D366;
+      color: #fff;
+    }
+
+    .btn-whatsapp:hover {
+      background: #1ebe5d;
+      transform: translateY(-2px);
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 16px 0;
+      transition: var(--transition);
+    }
+
+    .navbar.scrolled {
+      background: rgba(10, 10, 10, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 0;
+    }
+
+    .navbar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: var(--font-heading);
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+    }
+
+    .logo-sub {
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      font-family: var(--font-body);
+      margin-top: 2px;
+    }
+
+    .logo-icon {
+      width: 46px;
+      height: 46px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      box-shadow: 0 2px 12px rgba(196,30,36,0.4);
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    /* ===== EDITABLE FIELDS ===== */
+    .editable {
+      cursor: text;
+      border-bottom: 1px dashed transparent;
+      transition: var(--transition);
+      outline: none;
+      min-width: 40px;
+    }
+
+    .editable:hover {
+      border-bottom-color: var(--accent);
+    }
+
+    .editable:focus {
+      border-bottom-color: var(--accent);
+      background: rgba(196,30,36,0.05);
+      border-radius: 4px;
+      padding: 2px 4px;
+    }
+
+    /* ===== WHATSAPP ICON ===== */
+    .wa-icon {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      display: inline-block;
+      margin-right: 4px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .nav-links a {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--accent);
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #fff;
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      padding: 10px 24px;
+      font-size: 0.85rem;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      z-index: 1001;
+    }
+
+    .hamburger span {
+      width: 26px;
+      height: 2.5px;
+      background: #fff;
+      border-radius: 4px;
+      transition: var(--transition);
+    }
+
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: 120px 0 80px;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(10, 10, 10, 0.92) 0%, rgba(10, 10, 10, 0.7) 50%, rgba(10, 10, 10, 0.4) 100%);
+      z-index: 1;
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .hero-content {
+      max-width: 620px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(196, 30, 36, 0.15);
+      border: 1px solid rgba(196, 30, 36, 0.3);
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      color: var(--accent-light);
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      animation: fadeInUp 0.8s ease;
+    }
+
+    .hero-badge::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1)
+      }
+
+      50% {
+        opacity: 0.5;
+        transform: scale(1.3)
+      }
+    }
+
+    .hero h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.5rem, 6vw, 4.2rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      animation: fadeInUp 0.8s ease 0.1s both;
+    }
+
+    .hero h1 .highlight {
+      color: var(--accent);
+      display: inline;
+    }
+
+    .hero-sub {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 36px;
+      max-width: 520px;
+      animation: fadeInUp 0.8s ease 0.2s both;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      animation: fadeInUp 0.8s ease 0.3s both;
+    }
+
+    .hero-features {
+      display: flex;
+      gap: 24px;
+      margin-top: 40px;
+      animation: fadeInUp 0.8s ease 0.4s both;
+    }
+
+    .hero-feature {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    .hero-feature svg {
+      width: 18px;
+      height: 18px;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px)
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
+    /* ===== PRODUCTS ===== */
+    .products {
+      padding: 100px 0;
+      background: var(--bg-secondary);
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 28px;
+    }
+
+    .product-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(196, 30, 36, 0.3);
+      box-shadow: var(--shadow);
+    }
+
+    .product-img-wrapper {
+      position: relative;
+      height: 250px;
+      overflow: hidden;
+      background: #111;
+      cursor: pointer;
+    }
+
+    .product-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .product-card:hover .product-img-wrapper img {
+      transform: scale(1.05);
+    }
+
+    .product-img-wrapper .img-upload-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      transition: var(--transition);
+      cursor: pointer;
+    }
+
+    .product-img-wrapper:hover .img-upload-overlay {
+      opacity: 1;
+    }
+
+    .img-upload-overlay svg {
+      width: 32px;
+      height: 32px;
+      color: var(--accent-light);
+      margin-bottom: 8px;
+    }
+
+    .img-upload-overlay span {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+    }
+
+    .product-info {
+      padding: 24px;
+    }
+
+    .product-name {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .product-desc {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+
+    .product-price {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    .product-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .product-actions .btn {
+      flex: 1;
+      justify-content: center;
+      padding: 12px 16px;
+      font-size: 0.85rem;
+    }
+
+    /* ===== WHY CHOOSE US ===== */
+    .why-us {
+      padding: 100px 0;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 36px 28px;
+      text-align: center;
+      transition: var(--transition);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(196, 30, 36, 0.3);
+      box-shadow: var(--shadow);
+    }
+
+    .feature-icon {
+      width: 64px;
+      height: 64px;
+      background: rgba(196, 30, 36, 0.1);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      transition: var(--transition);
+    }
+
+    .feature-card:hover .feature-icon {
+      background: var(--accent);
+    }
+
+    .feature-icon svg {
+      width: 28px;
+      height: 28px;
+      color: var(--accent);
+      transition: var(--transition);
+    }
+
+    .feature-card:hover .feature-icon svg {
+      color: #fff;
+    }
+
+    .feature-card h3 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    .feature-card p {
+      color: var(--text-secondary);
+      font-size: 0.88rem;
+      line-height: 1.6;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact {
+      padding: 100px 0;
+      background: var(--bg-secondary);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .contact-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(196, 30, 36, 0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-icon svg {
+      width: 22px;
+      height: 22px;
+      color: var(--accent);
+    }
+
+    .contact-item h4 {
+      font-weight: 600;
+      margin-bottom: 4px;
+      font-size: 0.95rem;
+    }
+
+    .contact-item p {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 14px 18px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: #fff;
+      font-size: 0.95rem;
+      transition: var(--transition);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(196, 30, 36, 0.15);
+    }
+
+    .form-group textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: var(--text-muted);
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      padding: 60px 0 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 40px;
+    }
+
+    .footer-brand .logo {
+      margin-bottom: 16px;
+    }
+
+    .footer-brand p {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      max-width: 320px;
+      line-height: 1.7;
+    }
+
+    .footer-col h4 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .footer-col a {
+      display: block;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      padding: 6px 0;
+      transition: var(--transition);
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+      transform: translateX(4px);
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .footer-social a {
+      width: 40px;
+      height: 40px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+    }
+
+    .footer-social a:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .footer-social a svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding: 20px 0;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    /* ===== SCROLL ANIMATIONS ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== MOBILE ===== */
+    @media(max-width:900px) {
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        max-width: 320px;
+        height: 100vh;
+        background: rgba(10, 10, 10, 0.98);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 100px 36px 36px;
+        gap: 24px;
+        transition: var(--transition);
+        border-left: 1px solid var(--border);
+      }
+
+      .nav-links.open {
+        right: 0;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .nav-cta.desktop {
+        display: none;
+      }
+
+      .hero .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .hero-sub {
+        text-align: center;
+      }
+
+      .hero-btns {
+        justify-content: center;
+      }
+
+      .hero-features {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .product-grid {
+        grid-template-columns: 1fr;
+        max-width: 420px;
+        margin: 0 auto;
+      }
+    }
+
+    @media(max-width:480px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero-btns {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="logo">
+        <div class="logo-icon">🥩</div>
+        <div class="logo-text"><span>Red Cuts</span>
+          <div class="logo-sub">By Naeem Beef Shop</div>
+        </div>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#products">Our Products</a>
+        <a href="#why-us">Why Choose Us</a>
+        <a href="#contact">Contact</a>
+        <a href="https://wa.me/923485686585?text=Hi!%20I%20want%20to%20order%20from%20Red%20Cuts"
+          class="btn btn-primary nav-cta mobile-only" target="_blank" rel="noopener"><svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order on WhatsApp</a>
+      </nav>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <a href="https://wa.me/923485686585?text=Hi!%20I%20want%20to%20order%20from%20Red%20Cuts"
+          class="btn btn-primary nav-cta desktop" target="_blank" rel="noopener"><svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order Now</a>
+        <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg"><img src="hero_beef.png" alt="Premium fresh beef cuts at Red Cuts butcher shop"
+        loading="eager"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">● Premium Quality Guaranteed</div>
+        <h1>Premium Fresh Beef — <span class="highlight">Red Cuts</span></h1>
+        <p class="hero-sub">Quality Beef from Naeem Beef Shop. Expertly butchered, farm-fresh cuts prepared with care
+          and delivered at peak freshness.</p>
+        <div class="hero-btns">
+          <a href="#products" class="btn btn-primary">🥩 View Products</a>
+          <a href="https://wa.me/923485686585?text=Hi!%20I%20want%20to%20order%20from%20Red%20Cuts"
+            class="btn btn-whatsapp" target="_blank" rel="noopener"><svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Order on WhatsApp</a>
+        </div>
+        <div class="hero-features">
+          <div class="hero-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>100% Fresh Daily</div>
+          <div class="hero-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>Hygienic Process</div>
+          <div class="hero-feature"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>Premium Cuts</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Our Products</div>
+        <h2 class="section-title">Premium Beef <span style="color:var(--accent)">Selection</span></h2>
+        <p class="section-subtitle">Hand-selected cuts prepared by experienced butchers. Click on any product image to
+          upload your own photo.</p>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <!-- Products rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="why-us" id="why-us">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Why Choose Us</div>
+        <h2 class="section-title">Why <span style="color:var(--accent)">Red Cuts</span>?</h2>
+        <p class="section-subtitle">We take pride in delivering the finest quality beef with unmatched freshness and
+          service.</p>
+      </div>
+      <div class="features-grid" id="featuresGrid">
+        <!-- Features rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Contact <span style="color:var(--accent)">Us</span></h2>
+        <p class="section-subtitle">Ready to order? Reach out via WhatsApp or fill in the form below.</p>
+      </div>
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <a href="https://wa.me/923485686585?text=Hi!%20I%20want%20to%20order%20from%20Red%20Cuts"
+            class="btn btn-whatsapp" target="_blank" rel="noopener" style="justify-content:center">💬 Order on
+            WhatsApp</a>
+          <div class="contact-item">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg></div>
+            <div>
+              <h4>Phone</h4>
+              <p>+92 348 568 6585</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg></div>
+            <div>
+              <h4>Shop Location</h4>
+              <p><a href="https://maps.app.goo.gl/PYv1RyZ9smETcDzL7" target="_blank" rel="noopener"
+                  style="color:var(--text-secondary);text-decoration:underline;text-underline-offset:3px">Gosht Market,
+                  Laiq Ali Chowk</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg></div>
+            <div>
+              <h4>Business Hours</h4>
+              <p>Open Daily: 8:00 AM – 10:00 PM</p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" onsubmit="handleFormSubmit(event)">
+          <div class="form-group"><input type="text" id="contactName" placeholder="Your Name" required></div>
+          <div class="form-group"><input type="tel" id="contactPhone" placeholder="Phone Number" required></div>
+          <div class="form-group"><textarea id="contactMessage" placeholder="Your Message" required></textarea></div>
+          <button type="submit" class="btn btn-primary" style="justify-content:center;width:100%">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <div class="logo-icon">🥩</div>
+            <div class="logo-text">Red <span>Cuts</span>
+              <div class="logo-sub">By Naeem Beef Shop</div>
+            </div>
+          </a>
+          <p>Red Cuts — Naeem Beef Shop. Delivering premium, fresh, and hygienic beef cuts to your doorstep. Quality you
+            can trust.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+              </svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#products">Our Products</a>
+          <a href="#why-us">Why Choose Us</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <a href="#products">Beef Boneless</a>
+          <a href="#products">Beef with Bones</a>
+          <a href="#products">Beef Ribs</a>
+          <a href="#products">Beef Mince</a>
+          <a href="#products">Steak Pieces</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Red Cuts — Naeem Beef Shop. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    /* ===== PRODUCT DATA ===== */
+    const products = [
+      { id: 1, name: 'Beef Boneless', desc: 'Premium boneless cuts, perfect for curries, BBQ, and steaks. Tender and juicy.', price: 'Rs. 1,800 / kg', img: 'beef_boneless.png', alt: 'Fresh premium boneless beef cuts' },
+      { id: 2, name: 'Beef with Bones', desc: 'Flavorful bone-in beef cuts, ideal for nihari, paya, and slow-cooked dishes.', price: 'Rs. 1,200 / kg', img: 'beef_with_bones.png', alt: 'Fresh beef cuts with bones' },
+      { id: 3, name: 'Beef Ribs', desc: 'Succulent beef ribs with rich marbling. Perfect for grilling and BBQ nights.', price: 'Rs. 1,600 / kg', img: 'beef_ribs.png', alt: 'Premium beef ribs' },
+      { id: 4, name: 'Beef Mince (Keema)', desc: 'Finely ground premium beef mince for kebabs, samosas, and keema dishes.', price: 'Rs. 1,500 / kg', img: 'beef_mince.png', alt: 'Fresh beef mince keema' },
+      { id: 5, name: 'Special Steak Pieces', desc: 'Hand-cut thick steak pieces with perfect marbling. Restaurant-quality at home.', price: 'Rs. 2,200 / kg', img: 'steak_pieces.png', alt: 'Special premium steak pieces' },
+      { id: 6, name: 'Special Beef Paya', desc: 'Traditional beef paya (trotters), perfect for rich and flavorful paya soup. A classic delicacy.', price: 'Rs. 800 / kg', img: 'beef_paya.png', alt: 'Special beef paya trotters' }
+    ];
+
+    const features = [
+      { icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>', title: 'Fresh Daily Meat', desc: 'We source and prepare fresh beef every single day for maximum quality.' },
+      { icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>', title: 'Hygienic Cutting', desc: 'Our cutting process meets the highest hygiene and safety standards.' },
+      { icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>', title: 'Trusted Local Butcher', desc: 'Naeem Beef Shop is your trusted neighborhood butcher since years.' },
+      { icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>', title: 'Premium Quality Cuts', desc: 'Only the finest, hand-selected cuts make it to our display. No compromise.' },
+      { icon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>', title: 'Fast Customer Service', desc: 'Quick order processing and friendly service every time you visit.' }
+    ];
+
+    const waIconSvg = '<svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>';
+
+    /* ===== RENDER PRODUCTS ===== */
+    function renderProducts() {
+      const grid = document.getElementById('productGrid');
+      grid.innerHTML = products.map(p => `
+    <article class="product-card reveal" data-id="${p.id}">
+      <div class="product-img-wrapper" onclick="document.getElementById('imgInput${p.id}').click()">
+        <img id="prodImg${p.id}" src="${p.img}" alt="${p.alt}" loading="lazy">
+        <div class="img-upload-overlay">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          <span>Change Image</span>
+        </div>
+        <input type="file" id="imgInput${p.id}" accept="image/*" style="display:none" onchange="previewImage(event, ${p.id})">
+      </div>
+      <div class="product-info">
+        <h3 class="product-name editable" contenteditable="true">${p.name}</h3>
+        <p class="product-desc">${p.desc}</p>
+        <div class="product-price editable" contenteditable="true">${p.price}</div>
+        <div class="product-actions">
+          <a href="https://wa.me/923485686585?text=Hi!%20I%20want%20to%20order%20${encodeURIComponent(p.name)}%20from%20Red%20Cuts" class="btn btn-whatsapp" target="_blank" rel="noopener">${waIconSvg} Order</a>
+          <a href="#contact" class="btn btn-outline">📞 Inquire</a>
+        </div>
+      </div>
+    </article>
+  `).join('');
+    }
+
+    /* ===== RENDER FEATURES ===== */
+    function renderFeatures() {
+      const grid = document.getElementById('featuresGrid');
+      grid.innerHTML = features.map(f => `
+    <div class="feature-card reveal">
+      <div class="feature-icon">${f.icon}</div>
+      <h3>${f.title}</h3>
+      <p>${f.desc}</p>
+    </div>
+  `).join('');
+    }
+
+    /* ===== IMAGE PREVIEW ===== */
+    function previewImage(event, id) {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          document.getElementById('prodImg' + id).src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
+    }
+
+    /* ===== NAVBAR SCROLL ===== */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    /* ===== HAMBURGER MENU ===== */
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('open');
+    });
+    // Close menu on link click
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('open');
+      });
+    });
+
+    /* ===== ACTIVE NAV LINK ===== */
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY + 100;
+      sections.forEach(sec => {
+        const top = sec.offsetTop - 120;
+        const bottom = top + sec.offsetHeight;
+        const id = sec.getAttribute('id');
+        const link = document.querySelector(`.nav-links a[href="#${id}"]`);
+        if (link) link.classList.toggle('active', scrollY >= top && scrollY < bottom);
+      });
+    });
+
+    /* ===== SCROLL REVEAL ===== */
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    function initReveal() {
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    }
+
+    /* ===== FORM HANDLER ===== */
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('contactName').value;
+      const phone = document.getElementById('contactPhone').value;
+      const msg = document.getElementById('contactMessage').value;
+      const waMsg = `Hi! I'm ${name}.\nPhone: ${phone}\nMessage: ${msg}`;
+      window.open(`https://wa.me/923485686585?text=${encodeURIComponent(waMsg)}`, '_blank');
+      e.target.reset();
+    }
+
+    /* ===== THEME TOGGLE ===== */
+    function initTheme() {
+      const saved = localStorage.getItem('redcuts-theme');
+      if (saved) document.documentElement.setAttribute('data-theme', saved);
+    }
+
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      const next = current === 'light' ? 'dark' : 'light';
+      if (next === 'dark') {
+        html.removeAttribute('data-theme');
+        localStorage.setItem('redcuts-theme', 'dark');
+      } else {
+        html.setAttribute('data-theme', 'light');
+        localStorage.setItem('redcuts-theme', 'light');
+      }
+    });
+
+    /* ===== INIT ===== */
+    document.addEventListener('DOMContentLoaded', () => {
+      initTheme();
+      renderProducts();
+      renderFeatures();
+      setTimeout(initReveal, 100);
+    });
+  </script>
+</body>
+
+</html>
