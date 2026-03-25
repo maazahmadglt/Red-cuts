@@ -15,7 +15,7 @@ const PRODUCTS = [
             'Rich, deep flavour perfect for slow-cooking, hearty broths, and traditional curries. Ideal for family meals.',
         price: '1100 PKR',
         unit: 'kg',
-        image: '/beef_with_bones.png',
+        image: 'beef_with_bones.png',
         badge: 'Popular',
     },
     {
@@ -24,7 +24,7 @@ const PRODUCTS = [
             'Lean, tender, and carefully trimmed — ready for your favourite stir-fries, steaks, and everyday recipes.',
         price: '1500 PKR',
         unit: 'kg',
-        image: '/boneless_beef.png',
+        image: 'boneless_beef.png',
         badge: null,
     },
     {
@@ -33,7 +33,7 @@ const PRODUCTS = [
             'Premium cuts hand-selected by our master butcher. The finest marbled pieces reserved for the discerning cook.',
         price: '2000 PKR',
         unit: 'kg',
-        image: '/special_cuts.png',
+        image: 'special_cuts.png',
         badge: 'Premium',
     },
     {
@@ -42,7 +42,7 @@ const PRODUCTS = [
             'Juicy, meaty ribs bursting with flavour. Perfect for the grill, smoker, or slow braising over an open fire.',
         price: '1200 PKR',
         unit: 'kg',
-        image: '/beef_ribs.png',
+        image: 'beef_ribs.png',
         badge: null,
     },
     {
@@ -51,7 +51,7 @@ const PRODUCTS = [
             'Premium trotters rich in collagen and deep flavour. Perfect for a hearty, traditional slow-cooked broth.',
         price: '1000 PKR',
         unit: 'kg',
-        image: '/beef_paya.png',
+        image: 'beef_paya.png',
         badge: 'Special',
     },
 ];

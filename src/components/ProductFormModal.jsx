@@ -8,7 +8,7 @@ export default function ProductFormModal({ isOpen, onClose, onSave, product }) {
         description: '',
         price: '',
         unit: 'kg',
-        image: '/beef_with_bones.png', // Default or placeholder
+        image: 'beef_with_bones.png', // Default or placeholder
         badge: ''
     });
 
